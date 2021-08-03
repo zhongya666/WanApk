@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_example"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.zhongya.example.fragment.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_dialogFragment"
+            app:destination="@id/dialogFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out"/>
+        <action
+            android:id="@+id/action_mainFragment_to_timeButtonFragment"
+            app:destination="@id/timeButtonFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/dialogFragment"
+        android:name="com.zhongya.example.fragment.DialogFragment"
+        android:label="DialogFragment" />
+    <fragment
+        android:id="@+id/timeButtonFragment"
+        android:name="com.zhongya.example.fragment.TimeButtonFragment"
+        android:label="TimeButtonFragment" />
+</navigation>

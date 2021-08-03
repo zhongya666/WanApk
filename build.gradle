@@ -1,0 +1,33 @@
+buildscript {
+    ext {
+        kotlin_version = '1.5.21'
+        ext.koin_version = '3.1.2'
+    }
+    repositories {
+        google()
+        jcenter()
+        maven { url "http://maven.aliyun.com/nexus/content/repositories/releases"}
+        maven {
+            url "http://mvn.mob.com/android"
+        }
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath 'com.mob.sdk:MobSDK:2018.0319.1724'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "http://maven.aliyun.com/nexus/content/repositories/releases"}
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#07C160</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <!--白天主题-->
+    <!--夜间主题-->
+    <!-- app主色调-->
+    <color name="black">#FF000000</color>
+    <color name="text_black_cancel">#999999</color>
+
+    <color name="text_status_orange">#ff9d29</color>
+    <color name="red">#FFFF0000</color>
+    <color name="state_red">#fd1833</color>
+    <color name="text_red">#FF1A25</color>
+    <color name="green">#FF00FF00</color>
+    <color name="state_green">#24a701</color>
+    <color name="status_green">#6ecc40</color>
+    <color name="gray">#FFF0F0F0</color>
+    <color name="transparent">#00000000</color>
+    <color name="line_recent_contact">#FFEEEEEE</color>
+    <color name="blue">#6495fe</color>
+    <color name="main_blue">#508AF0</color>
+    <color name="blue_dark">#6495fe</color>
+    <color name="toast_white">#ffffff</color>
+    <color name="toast_stroke_gray">#99d4d4d4</color>
+    <color name="white_text">#5f5f5f</color>
+    <color name="name_gray">#181914</color>
+    <color name="time_down_red">#F3786B</color>
+    <color name="resource_gray">#727272</color>
+    <color name="resource_black">#333333</color>
+    <color name="background_color_gray">#e5e5e5</color>
+    <color name="edit_back_gray">#f5f5f9</color>
+    <color name="text_gray">#666666</color>
+    <color name="text_line_gray">#1c1c1c</color>
+
+
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffffff</color>
+
+    <color name="def_window">#f5f5f9</color>
+
+    <color name="bg_tips">#FBF3D0</color>
+
+
+
+    <color name="def_normal">#383838</color>
+    <color name="colorGray">#333</color>
+
+
+    <color name="huise_f5">#F5F5F5</color>
+    <color name="huise_b5">#B5B5B5</color>
+    <color name="huise_ec">#ECECEC</color>
+    <color name="huise_eee">#EEEEEE</color>
+    <color name="huise_edf">#EDF1F8</color>
+    <color name="huise_ef">#EFEFEF</color>
+    <color name="huise_bdb">#BDBDBD</color>
+    <color name="color_333">#333333</color>
+    <color name="color_666">#666666</color>
+    <color name="color_999">#999999</color>
+    <color name="color_202">#202020</color>
+    <color name="red_ff1">#FF1A25</color>
+    <color name="blue_52">#528AF0</color>
+    <color name="blue_49">#4959D0</color>
+    <color name="blue_30">#3039ED</color>
+    <color name="yellow_ff">#FF8540</color>
+    <color name="yellow_f2">#F28739</color>
+    <color name="green_0f">#0FBDBB</color>
+    <color name="text_color_gey">#676767</color>
+    <color name="orange_f08">#F08452</color>
+    <color name="orange_f09">#F09552</color>
+    <color name="white_bg">#EEEEEE</color>
+
+
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">玩</string>
+
+    <string name="permission_request_denied" translatable="false">需要相应的权限</string>
+    <string name="error_gif" translatable="false">长宽不小于 %1$dpx，且大小不超过 %2$sM。</string>
+    <string name="error_original" translatable="false">大小不超过 %1$sM。</string>
+    <string name="error_occurred" translatable="false">不好意思App翻车了。\n请拿已复制好的错误日志去啪啪啪得打作者的脸</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+
+
+</resources>

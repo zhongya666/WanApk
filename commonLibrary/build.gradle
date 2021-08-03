@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+apply from:'../dependencies.gradle'
+
+dependencies {
+
+    api "androidx.legacy:legacy-support-v4:1.0.0"
+    api "com.gyf.immersionbar:immersionbar:3.0.0"
+    api "io.github.youth5201314:banner:2.2.2"
+    api "com.gongwen:marqueelibrary:1.1.3"//跑马灯
+    api "com.github.chrisbanes:PhotoView:2.1.3"
+    api "com.zhihu.android:matisse:0.5.2"//相册选择图片
+    api 'com.gitee.zhongya666:WanLibrary:master-SNAPSHOT'
+    api 'com.tencent:mmkv:1.0.23'
+}

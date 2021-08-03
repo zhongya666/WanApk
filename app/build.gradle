@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+apply from:'../dependencies.gradle'
+apply plugin: 'com.mob.sdk'
+apply plugin: 'kotlin-android'
+
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd-HHmmss", TimeZone.getTimeZone("GMT+8"))
+}
+
+android {
+    defaultConfig {
+        applicationId "com.zhongya.havefun"
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "da79cbfcf6a7ae710fcc3cf0", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+
+    signingConfigs {
+        /*debug {
+            storeFile file("xiaoyongyuan.jks")
+            storePassword 'wp112233'
+            keyAlias 'wangzhongya'
+            keyPassword 'wp112233'
+        }*/
+
+        releaseConfig {
+            storeFile file("xiaoyongyuan.jks")
+            storePassword 'wp112233'
+            keyAlias 'wangzhongya'
+            keyPassword 'wp112233'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.releaseConfig
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+//                    outputFileName = "${variant.buildType.name}-wubo56driver-${defaultConfig.versionCode}-${defaultConfig.versionName}-${releaseTime()}.apk"
+                    outputFileName = "Panda_${defaultConfig.versionName}_${releaseTime()}.apk"
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+
+    implementation project(':commonLibrary')
+
+    //底部bottomBar
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+    //防崩溃
+    implementation 'cat.ereza:customactivityoncrash:2.3.0'
+    //dialog
+    implementation "com.afollestad.material-dialogs:lifecycle:3.3.0"
+    implementation "com.afollestad.material-dialogs:core:3.3.0"
+    implementation "com.afollestad.material-dialogs:color:3.3.0"
+    implementation "com.afollestad.material-dialogs:datetime:3.3.0"
+    implementation "com.afollestad.material-dialogs:bottomsheets:3.3.0"
+
+    //极光推送
+    implementation 'cn.jiguang.sdk:jpush:3.1.6'
+    implementation 'cn.jiguang.sdk:jcore:1.2.5'
+
+    //百度统计
+    implementation "com.baidu.mobstat:mtj-sdk:3.9.3.8"
+
+    //视频播放
+    implementation "com.shuyu:GSYVideoPlayer:7.1.4"
+
+    if (!singleModule.toBoolean()) {
+        implementation project(path: ':example')
+    }
+
+}
+MobSDK {
+    appKey "m32338e9b5e3b8"
+    appSecret "46e2dd63bf91d3afb757d2db25a9a27d"
+
+    ShareSDK {
+        devInfo {
+            SinaWeibo {
+                appKey "568898243"
+                appSecret "38a4f8204cc784f81f9f0daaf31e02e3"
+                callbackUri "http://www.sharesdk.cn"
+                shareByAppClient false
+            }
+            Wechat {
+                appId "wx4868b35061f87885"
+                appSecret "64020361b8ec4c99936c0e3999a9f249"
+            }
+            QQ {
+                appId "1106752987"
+                appKey "HySGWKdamjW1nPKU"
+            }
+            Facebook {
+                appKey "1412473428822331"
+                appSecret "a42f4f3f867dc947b9ed6020c2e93558"
+                callbackUri "https://mob.com"
+            }
+        }
+    }
+}

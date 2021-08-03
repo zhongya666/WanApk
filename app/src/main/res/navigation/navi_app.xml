@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navi_app"
+    app:startDestination="@id/wanFragment">
+
+    <fragment
+        android:id="@+id/wanFragment"
+        android:name="com.zhongya.havefun.ui.fragment.main.MainFragment"
+        android:label="WanFragment" >
+        <action
+            android:id="@+id/action_wanFragment_to_collectFragment"
+            app:destination="@id/collectFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out"/>
+        <action
+            android:id="@+id/action_wanFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out"/>
+        <action
+            android:id="@+id/action_wanFragment_to_weatherFragment"
+            app:destination="@id/weatherFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.zhongya.havefun.ui.fragment.personal.LoginFragment"
+        android:label="LoginFragment" />
+    <action
+        android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment"
+        app:enterAnim="@anim/slide_right_in"
+        app:exitAnim="@anim/slide_left_out"
+        app:popEnterAnim="@anim/slide_left_in"
+        app:popExitAnim="@anim/slide_right_out" />
+    <fragment
+        android:id="@+id/collectFragment"
+        android:name="com.zhongya.havefun.ui.fragment.personal.CollectFragment"
+        android:label="CollectFragment" />
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.zhongya.havefun.ui.fragment.personal.ScoreFragment"
+        android:label="ScoreFragment" >
+        <action
+            android:id="@+id/action_scoreFragment_to_scoreHistoryFragment"
+            app:destination="@id/scoreHistoryFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.zhongya.havefun.ui.fragment.other.WebViewFragment"
+        android:label="WebViewFragment" />
+    <action
+        android:id="@+id/action_global_webViewFragment"
+        app:destination="@id/webViewFragment"
+        app:enterAnim="@anim/slide_right_in"
+        app:exitAnim="@anim/slide_left_out"
+        app:popEnterAnim="@anim/slide_left_in"
+        app:popExitAnim="@anim/slide_right_out" />
+    <fragment
+        android:id="@+id/scoreHistoryFragment"
+        android:name="com.zhongya.havefun.ui.fragment.personal.ScoreHistoryFragment"
+        android:label="ScoreHistoryFragment" />
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.zhongya.havefun.ui.fragment.personal.WeatherFragment"
+        android:label="WeatherFragment" />
+
+
+</navigation>
