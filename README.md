@@ -9,11 +9,8 @@
 `Retrofit + ARouter + 组件化 + Jetpack + pagging3 + MVVM + 协程 + Koin + Coil`<br>
 
 ## 效果图
-<img src="https://github.com/zhongya666/WanApk/raw/master/preview/1.jpg" width="200" height="400"/>
-<img src="https://github.com/zhongya666/WanApk/raw/master/preview/2.jpg" width="200" height="400"/>
-<img src="https://github.com/zhongya666/WanApk/raw/master/preview/3.jpg" width="200" height="400"/><br>
-<img src="https://github.com/zhongya666/WanApk/raw/master/preview/1.gif" width="200" height="400"/>
-<img src="https://github.com/zhongya666/WanApk/raw/master/preview/4.png" width="400" height="200"/>
+<img src="https://github.com/zhongya666/WanApk/raw/master/preview/1.jpg" width="1200" height="400"/>
+<img src="https://gitee.com/zhongya666/WanApk/raw/master/preview/4.png" width="400" height="200"/>
 
 ## 项目详情
 ##### 1、如何独立运行一个Module？
