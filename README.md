@@ -9,11 +9,11 @@
 `Retrofit + ARouter + 组件化 + Jetpack + pagging3 + MVVM + 协程 + Koin + Coil`<br>
 
 ## 效果图
-<img src="https://gitee.com/zhongya666/WanApk/raw/master/preview/1.jpg" width="200" height="400"/>
-<img src="https://gitee.com/zhongya666/WanApk/raw/master/preview/2.jpg" width="200" height="400"/>
-<img src="https://gitee.com/zhongya666/WanApk/raw/master/preview/3.jpg" width="200" height="400"/><br>
-<img src="https://gitee.com/zhongya666/WanApk/raw/master/preview/1.gif" width="200" height="400"/>
-<img src="https://gitee.com/zhongya666/WanApk/raw/master/preview/4.png" width="400" height="200"/>
+<img src="https://github.com/zhongya666/WanApk/raw/master/preview/1.jpg" width="200" height="400"/>
+<img src="https://github.com/zhongya666/WanApk/raw/master/preview/2.jpg" width="200" height="400"/>
+<img src="https://github.com/zhongya666/WanApk/raw/master/preview/3.jpg" width="200" height="400"/><br>
+<img src="https://github.com/zhongya666/WanApk/raw/master/preview/1.gif" width="200" height="400"/>
+<img src="https://github.com/zhongya666/WanApk/raw/master/preview/4.png" width="400" height="200"/>
 
 ## 项目详情
 ##### 1、如何独立运行一个Module？
@@ -48,7 +48,7 @@ sourceSets{
     }
 ```
 编译运行后，桌面会出现多个应用图标，如下：（考虑到组件化的使用场景，就独立出一个跟app模块耦合性低的模块。玩库是为我另一个项目[WanLibrary](https://gitee.com/zhongya666/WanLibrary.git)而作，主要对我封装的万能小控件做一些演示，其代码简单易懂）
-<img src="https://gitee.com/zhongya666/WanApk/raw/master/preview/5.jpg" width="400" height="300"/><br>
+<img src="https://github.com/zhongya666/WanApk/raw/master/preview/5.jpg" width="400" height="300"/><br>
 
 那问题来了，组件间如何通信？<br>
 主要借助阿里的路由框架[ARouter](https://github.com/alibaba/ARouter)
