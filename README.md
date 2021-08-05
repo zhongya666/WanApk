@@ -13,6 +13,8 @@
 <img src="https://gitee.com/zhongya666/WanApk/raw/master/preview/4.png" width="400" height="200"/>
 
 ## 项目详情
+由于网络问题，大家可以浏览我的gitee
+[WanApk](https://gitee.com/zhongya666/WanApk.git)
 ##### 1、如何独立运行一个Module？
 我们只需要在根目录下`gradle.properties`中添加一个`singleModule`标志位，该标志位可以用来表示当前Module是否是独立模块，`true`表示处于独立模块，可单独运行，`false`则表示是一个library。
 ```
